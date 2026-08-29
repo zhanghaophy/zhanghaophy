@@ -1,56 +1,242 @@
-<html lang="zh">
-<head style="font-size:10em; ">
-  <title>张昊(Hao Y. Zhang)的个人主页</title>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hao Y. Zhang — theoretical physicist working on string theory, quantum field theory, and generalized symmetries. Assistant Professor at BIMSA from September 2026.">
+  <meta name="theme-color" content="#f4f0e8">
+  <title>Hao Y. Zhang | 张昊</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-<p>Hao Y. Zhang's Personal Homepage</p>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#home" aria-label="Hao Y. Zhang home">
+        <span class="wordmark-name">Hao Y. Zhang</span>
+        <span class="wordmark-cn">张昊</span>
+      </a>
 
-<img src="./photo.png">
-  
-<p>Current Academic Position</p>
-<p>2023.10- Postdoctoral Fellow, Kavli Institute for the Physics and Mathematics of the Universe, University of Tokyo</p>
-  
-<p>Degrees</p>
-<p>2018.9 - 2023.6 Ph.D., Department of Physics of Astromics, School of Arts and Sciences, University of Pennsylvania</p>
-<p>Dissertation Title: Generalized Symmetries in Supergravities and Superconformal Field Theories via String Theory </p>
-<p>Advisor: <a href="https://en.wikipedia.org/wiki/Mirjam_Cvetič">Mirjam Cvetič</a>， 
-  Co-Advisor: <a href="https://www.jjheckman.com">Jonathan J. Heckman</a></p>
-<p>2014.9 - 2018.7 B.S. in Physics, School of Physics, Peking University</p>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#home" data-section="home" data-en="Home" data-zh="主页">Home</a>
+        <a href="#cv" data-section="cv" data-en="CV" data-zh="履历">CV</a>
+        <a href="#research" data-section="research" data-en="Research" data-zh="研究">Research</a>
+        <a href="#teaching" data-section="teaching" data-en="Teaching" data-zh="教学">Teaching</a>
+        <a href="#contact" data-section="contact" data-en="Contact" data-zh="联系方式">Contact</a>
+        <a href="#misc" data-section="misc" data-en="Miscellaneous" data-zh="其它">Miscellaneous</a>
+      </nav>
 
-  
-<p>Relevant Links</p>
-<ul>
-<li> <a href="./HaoZhang_CV_202403.pdf">Long CV</a> </li>
-<li> <a href="https://scholar.google.com/citations?user=xNSb1rYAAAAJ&hl=en">Google Scholar Personal Webpage</a> </li>
-<li> <a href="https://inspirehep.net/authors/1694387?ui-citation-summary=true">Inspire-Hep Personal Webpage</a> </li>
-<li> <a href="https://db.ipmu.jp/member/personal/7390en.html">Kavli IPMU Personal Webpage</a> </li>
-<li> <a href="https://www.ipmu.jp">Kavli IPMU Homepage</a> </li>
-</ul>
+      <div class="language-switcher" role="group" aria-label="Language">
+        <button type="button" data-language="en" aria-pressed="true">EN</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-language="zh" aria-pressed="false">中文</button>
+      </div>
+    </div>
+  </header>
 
-  
-<p>张昊(Hao Y. Zhang)的个人主页</p>
+  <main id="main-content">
+    <section id="home" class="page-section hero" data-page-section tabindex="-1">
+      <div class="hero-copy">
+        <p class="eyebrow" data-en="Theoretical Physics · String Theory" data-zh="理论物理 · 弦理论">Theoretical Physics · String Theory</p>
+        <h1><span>Hao Y. Zhang</span><span class="h1-cn">张昊</span></h1>
+        <p class="hero-lede" data-en="I am a theoretical physicist working on string theory and quantum field theory, with a particular interest in generalized and non-invertible symmetries and their geometric structures." data-zh="我的研究集中在弦理论与量子场论，尤其关注广义对称性、不可逆对称性，以及它们背后的几何结构。">I am a theoretical physicist working on string theory and quantum field theory, with a particular interest in generalized and non-invertible symmetries and their geometric structures.</p>
+        <div class="current-role">
+          <span class="role-label" data-en="Upcoming" data-zh="即将任职">Upcoming</span>
+          <p data-en="Assistant Professor, Beijing Institute of Mathematical Sciences and Applications (BIMSA)" data-zh="北京雁栖湖应用数学研究院（BIMSA）助理教授">Assistant Professor, Beijing Institute of Mathematical Sciences and Applications (BIMSA)</p>
+          <span class="role-date" data-en="From 2026.09" data-zh="2026.09 起">From 2026.09</span>
+        </div>
+        <div class="current-role current-role-secondary">
+          <span class="role-label" data-en="Current" data-zh="现任">Current</span>
+          <p data-en="Postdoctoral Fellow, Kavli Institute for the Physics and Mathematics of the Universe (Kavli IPMU), University of Tokyo" data-zh="东京大学科维里数物连携宇宙学研究所（Kavli IPMU）博士后研究员">Postdoctoral Fellow, Kavli Institute for the Physics and Mathematics of the Universe (Kavli IPMU), University of Tokyo</p>
+          <span class="role-date">2023.10 — 2026.08</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#research" data-en="Explore research" data-zh="查看研究">Explore research</a>
+          <a class="button button-light" href="HaoZhang_CV_2026.pdf" target="_blank" rel="noopener" data-en="Download CV ↗" data-zh="下载履历 ↗">Download CV ↗</a>
+        </div>
+      </div>
+      <div class="portrait-wrap">
+        <div class="portrait-frame">
+          <img src="photo.png" alt="Portrait of Hao Y. Zhang" width="210" height="275">
+        </div>
+        <p class="portrait-caption" data-en="Kavli IPMU · University of Tokyo" data-zh="Kavli IPMU · 东京大学">Kavli IPMU · University of Tokyo</p>
+      </div>
+    </section>
 
-<img src="./photo.png">
-  
-<p>工作经历</p>
-<p>2023.10- 东京大学 科维里数物连携宇宙学研究所 博士后研究员 (postdoctoral fellow)</p>
-  
-<p>教育经历</p>
-<p>2018.9 - 2023.6 宾夕法尼亚大学 文理学院 物理与天文学系 博士</p>
-<p>导师: <a href="https://en.wikipedia.org/wiki/Mirjam_Cvetič">Mirjam Cvetič</a>， 
-  共同导师: <a href="https://www.jjheckman.com">Jonathan J. Heckman</a></p>
-<p>2014.9 - 2018.7 北京大学 物理学院 本科</p>
+    <section id="cv" class="page-section" data-page-section tabindex="-1">
+      <div class="section-heading">
+        <p class="section-number">01</p>
+        <div>
+          <h2 data-en="Curriculum Vitae" data-zh="个人履历">Curriculum Vitae</h2>
+          <p data-en="Academic appointments and education." data-zh="学术任职与教育经历。">Academic appointments and education.</p>
+        </div>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <p class="timeline-date" data-en="From 2026.09" data-zh="2026.09 起">From 2026.09</p>
+          <div>
+            <h3 data-en="Assistant Professor (expected)" data-zh="助理教授（预计）">Assistant Professor (expected)</h3>
+            <p data-en="Beijing Institute of Mathematical Sciences and Applications (BIMSA)" data-zh="北京雁栖湖应用数学研究院（BIMSA）">Beijing Institute of Mathematical Sciences and Applications (BIMSA)</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <p class="timeline-date">2023.10 — 2026.08</p>
+          <div>
+            <h3 data-en="Postdoctoral Fellow" data-zh="博士后研究员">Postdoctoral Fellow</h3>
+            <p data-en="Kavli Institute for the Physics and Mathematics of the Universe, University of Tokyo" data-zh="东京大学科维里数物连携宇宙学研究所（Kavli IPMU）">Kavli Institute for the Physics and Mathematics of the Universe, University of Tokyo</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <p class="timeline-date">2018.08 — 2023.08</p>
+          <div>
+            <h3 data-en="Ph.D. in Physics and Astronomy" data-zh="物理与天文学博士">Ph.D. in Physics and Astronomy</h3>
+            <p data-en="University of Pennsylvania · Advisor: Mirjam Cvetič · Co-advisor: Jonathan J. Heckman" data-zh="宾夕法尼亚大学 · 导师：Mirjam Cvetič · 共同导师：Jonathan J. Heckman">University of Pennsylvania · Advisor: Mirjam Cvetič · Co-advisor: Jonathan J. Heckman</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <p class="timeline-date">2014.09 — 2018.07</p>
+          <div>
+            <h3 data-en="B.S. in Physics" data-zh="物理学学士">B.S. in Physics</h3>
+            <p data-en="School of Physics, Peking University" data-zh="北京大学物理学院">School of Physics, Peking University</p>
+          </div>
+        </article>
+      </div>
+      <div class="link-row">
+        <a class="text-link" href="HaoZhang_CV_2026.pdf" target="_blank" rel="noopener" data-en="Read the full academic CV ↗" data-zh="查看完整学术履历 ↗">Read the full academic CV ↗</a>
+        <a class="text-link text-link-muted" href="HaoZhang_CV_2026.docx" data-en="Download Word version" data-zh="下载 Word 版本">Download Word version</a>
+      </div>
+    </section>
 
-  
-<p>相关学术链接</p>
-<ul>
-<li> <a href="./HaoZhang_CV_202403.pdf">个人学术简历</a> </li>
-<li> <a href="https://scholar.google.com/citations?user=xNSb1rYAAAAJ&hl=en">谷歌学术个人主页</a> </li>
-<li> <a href="https://inspirehep.net/authors/1694387?ui-citation-summary=true">Inspire-Hep个人主页</a> </li>
-<li> <a href="https://db.ipmu.jp/member/personal/7390en.html">东京大学科维里研究所:个人信息页</a> </li>
-<li> <a href="https://www.ipmu.jp">东京大学科维里研究所:机构主页</a> </li>
-</ul>
+    <section id="research" class="page-section" data-page-section tabindex="-1">
+      <div class="section-heading">
+        <p class="section-number">02</p>
+        <div>
+          <h2 data-en="Research" data-zh="研究">Research</h2>
+          <p data-en="Selected themes and recent publications." data-zh="主要研究方向与近期论文。">Selected themes and recent publications.</p>
+        </div>
+      </div>
+      <div class="research-intro">
+        <h3 data-en="Generalized symmetries across geometry and field theory" data-zh="贯穿几何与场论的广义对称性">Generalized symmetries across geometry and field theory</h3>
+        <p data-en="My work explores generalized and non-invertible symmetries, superconformal field theories, string compactifications, and the topology of gauge groups. My doctoral dissertation studied generalized symmetries in supergravity and superconformal field theories through string theory." data-zh="我的研究涵盖广义与不可逆对称性、超共形场论、弦紧致化以及规范群拓扑。博士论文通过弦理论研究超引力和超共形场论中的广义对称性。">My work explores generalized and non-invertible symmetries, superconformal field theories, string compactifications, and the topology of gauge groups. My doctoral dissertation studied generalized symmetries in supergravity and superconformal field theories through string theory.</p>
+      </div>
+      <div class="paper-list">
+        <article class="paper">
+          <span class="paper-year">2026</span>
+          <div><h3>On the SymTFT of Finite Non-Abelian Symmetries</h3><p>Oren Bergman, Jonathan J. Heckman, Max Hübner, Daniele Migliorati, Xingyang Yu, Hao Y. Zhang · arXiv:2603.12323</p></div>
+        </article>
+        <article class="paper">
+          <span class="paper-year">2026</span>
+          <div><h3>Orbi-Instantons and Class-S Theories of Type D</h3><p>Jiakang Bao, Noppadol Mekareeya, Gabi Zafrir, Hao Y. Zhang · JHEP 06 (2026) 190</p></div>
+        </article>
+        <article class="paper">
+          <span class="paper-year">2025</span>
+          <div><h3>Spurion Analysis for Non-Invertible Selection Rules from Near-Group Fusions</h3><p>Motoo Suzuki, Ling-Xiao Xu, Hao Y. Zhang · arXiv:2508.14970</p></div>
+        </article>
+        <article class="paper">
+          <span class="paper-year">2025</span>
+          <div><h3>von Neumann Algebra and Non-Invertible Symmetries</h3><p>Xingyang Yu, Hao Y. Zhang · SciPost Physics 19 (2025) 154</p></div>
+        </article>
+      </div>
+      <div class="link-row">
+        <a class="text-link" href="https://inspirehep.net/authors/1694387?ui-citation-summary=true" target="_blank" rel="noopener" data-en="All publications on INSPIRE ↗" data-zh="在 INSPIRE 查看全部论文 ↗">All publications on INSPIRE ↗</a>
+        <a class="text-link" href="https://scholar.google.com/citations?user=xNSb1rYAAAAJ&hl=en" target="_blank" rel="noopener" data-en="Google Scholar ↗" data-zh="Google Scholar ↗">Google Scholar ↗</a>
+      </div>
+    </section>
+
+    <section id="teaching" class="page-section" data-page-section tabindex="-1">
+      <div class="section-heading">
+        <p class="section-number">03</p>
+        <div>
+          <h2 data-en="Teaching" data-zh="教学">Teaching</h2>
+          <p data-en="Teaching assistantships and recitation instruction." data-zh="助教、习题课与课程辅导经历。">Teaching assistantships and recitation instruction.</p>
+        </div>
+      </div>
+      <div class="teaching-grid">
+        <article>
+          <p class="teaching-year">2023</p>
+          <h3 data-en="Physics at Penn" data-zh="宾大物理课程">Physics at Penn</h3>
+          <ul>
+            <li data-en="Physics 151 — Electromagnetism" data-zh="Physics 151 — 电磁学">Physics 151 — Electromagnetism</li>
+            <li data-en="Physics 522 — Introduction to Elementary Particle Physics" data-zh="Physics 522 — 基本粒子物理导论">Physics 522 — Introduction to Elementary Particle Physics</li>
+          </ul>
+        </article>
+        <article>
+          <p class="teaching-year">2020 — 2022</p>
+          <h3 data-en="Physics & mathematics at Penn" data-zh="宾大物理与数学课程">Physics & mathematics at Penn</h3>
+          <ul>
+            <li data-en="Quantum Field Theory I & II" data-zh="量子场论 I、II">Quantum Field Theory I & II</li>
+            <li data-en="Electromagnetism and mechanics laboratories" data-zh="电磁学与力学实验课">Electromagnetism and mechanics laboratories</li>
+            <li data-en="Linear algebra and multivariable calculus" data-zh="线性代数与多元微积分">Linear algebra and multivariable calculus</li>
+          </ul>
+        </article>
+        <article>
+          <p class="teaching-year">2018 — 2019</p>
+          <h3 data-en="Recitations & grading" data-zh="习题课与课程辅导">Recitations & grading</h3>
+          <ul>
+            <li data-en="Honors mechanics and electromagnetism at Penn" data-zh="宾大荣誉力学与荣誉电磁学">Honors mechanics and electromagnetism at Penn</li>
+            <li data-en="Computational Physics at Peking University" data-zh="北京大学计算物理">Computational Physics at Peking University</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="page-section" data-page-section tabindex="-1">
+      <div class="section-heading">
+        <p class="section-number">04</p>
+        <div>
+          <h2 data-en="Contact" data-zh="联系方式">Contact</h2>
+          <p data-en="For research correspondence and academic inquiries." data-zh="欢迎就研究合作与学术问题联系。">For research correspondence and academic inquiries.</p>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div>
+          <p class="contact-label" data-en="Email" data-zh="电子邮箱">Email</p>
+          <a href="mailto:hao.zhang@ipmu.jp">hao.zhang@ipmu.jp</a>
+        </div>
+        <div>
+          <p class="contact-label" data-en="Office" data-zh="办公地址">Office</p>
+          <p data-en="Room A24, Kavli IPMU, University of Tokyo" data-zh="东京大学 Kavli IPMU，A24 室">Room A24, Kavli IPMU, University of Tokyo</p>
+        </div>
+        <div>
+          <p class="contact-label" data-en="Address" data-zh="通信地址">Address</p>
+          <p data-en="5-1-5 Kashiwanoha, Kashiwa, Chiba 277-8583, Japan" data-zh="日本千叶县柏市柏之叶 5-1-5，邮编 277-8583">5-1-5 Kashiwanoha, Kashiwa, Chiba 277-8583, Japan</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="misc" class="page-section" data-page-section tabindex="-1">
+      <div class="section-heading">
+        <p class="section-number">05</p>
+        <div>
+          <h2 data-en="Miscellaneous" data-zh="其它">Miscellaneous</h2>
+          <p data-en="Academic links and recent talks." data-zh="学术链接与近期报告。">Academic links and recent talks.</p>
+        </div>
+      </div>
+      <div class="misc-grid">
+        <article>
+          <h3 data-en="Elsewhere" data-zh="相关链接">Elsewhere</h3>
+          <ul class="clean-list link-list">
+            <li><a href="https://db.ipmu.jp/member/personal/7390en.html" target="_blank" rel="noopener" data-en="Kavli IPMU profile ↗" data-zh="Kavli IPMU 个人页面 ↗">Kavli IPMU profile ↗</a></li>
+            <li><a href="https://inspirehep.net/authors/1694387?ui-citation-summary=true" target="_blank" rel="noopener">INSPIRE-HEP ↗</a></li>
+            <li><a href="https://scholar.google.com/citations?user=xNSb1rYAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar ↗</a></li>
+          </ul>
+        </article>
+        <article>
+          <h3 data-en="Recent talks" data-zh="近期报告">Recent talks</h3>
+          <ul class="clean-list detail-list">
+            <li><span>2025</span><span data-en="Type I Anomaly Cancellation and Differential KO Theory" data-zh="I 型弦反常抵消与微分 KO 理论">Type I Anomaly Cancellation and Differential KO Theory</span></li>
+            <li><span>2025</span><span data-en="von Neumann Subfactors and Gauging Non-Invertible Symmetries" data-zh="冯·诺依曼子因子与不可逆对称性的规范化">von Neumann Subfactors and Gauging Non-Invertible Symmetries</span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year">2026</span> Hao Y. Zhang</p>
+    <a href="#home" data-en="Back to top ↑" data-zh="返回顶部 ↑">Back to top ↑</a>
+  </footer>
 </body>
 </html>
