@@ -8,10 +8,18 @@
   function setLanguage(language) {
     const nextLanguage = language === 'zh' ? 'zh' : 'en';
     root.lang = nextLanguage === 'zh' ? 'zh-CN' : 'en';
-    document.title = nextLanguage === 'zh' ? '张昊 | 个人主页' : 'Hao Y. Zhang | Personal Homepage';
+    document.title = document.body.dataset[nextLanguage === 'zh' ? 'titleZh' : 'titleEn']
+      || (nextLanguage === 'zh' ? '张昊 | 个人主页' : 'Hao Y. Zhang | Personal Homepage');
 
     translatedElements.forEach((element) => {
       element.textContent = element.dataset[nextLanguage];
+    });
+
+    document.querySelectorAll('[data-alt-en][data-alt-zh]').forEach((element) => {
+      element.alt = element.dataset[nextLanguage === 'zh' ? 'altZh' : 'altEn'];
+    });
+    document.querySelectorAll('[data-aria-en][data-aria-zh]').forEach((element) => {
+      element.setAttribute('aria-label', element.dataset[nextLanguage === 'zh' ? 'ariaZh' : 'ariaEn']);
     });
 
     languageButtons.forEach((button) => {
@@ -57,4 +65,25 @@
   const browserLanguage = navigator.language.toLowerCase().startsWith('zh') ? 'zh' : 'en';
   setLanguage(savedLanguage || browserLanguage);
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  const portraits = Array.from(document.querySelectorAll('[data-portrait]'));
+  const slideshowToggle = document.querySelector('[data-slideshow-toggle]');
+  if (portraits.length > 1 && slideshowToggle) {
+    let currentPortrait = 0;
+    let paused = false;
+    slideshowToggle.hidden = false;
+    window.setInterval(() => {
+      if (paused || document.hidden) return;
+      portraits[currentPortrait].hidden = true;
+      currentPortrait = (currentPortrait + 1) % portraits.length;
+      portraits[currentPortrait].hidden = false;
+    }, 10000);
+    slideshowToggle.addEventListener('click', () => {
+      paused = !paused;
+      slideshowToggle.setAttribute('aria-pressed', String(paused));
+      slideshowToggle.dataset.en = paused ? 'Play photos' : 'Pause photos';
+      slideshowToggle.dataset.zh = paused ? '继续轮播' : '暂停轮播';
+      slideshowToggle.textContent = slideshowToggle.dataset[root.lang === 'zh-CN' ? 'zh' : 'en'];
+    });
+  }
 })();

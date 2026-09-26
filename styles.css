@@ -250,6 +250,21 @@ h1 span { display: block; }
 }
 
 .portrait-frame img { width: 100%; height: auto; display: block; filter: saturate(.78) contrast(1.04); }
+.portrait-frame img[data-portrait] { aspect-ratio: 210 / 275; object-fit: cover; }
+[hidden] { display: none !important; }
+.slideshow-toggle {
+  display: block;
+  margin: 8px auto 0;
+  padding: 3px 8px;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 11px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
 
 .portrait-caption {
   margin: 31px 0 0;
@@ -329,6 +344,25 @@ h1 span { display: block; }
 .paper-year { color: var(--accent); font-size: 13px; font-weight: 750; }
 .paper h3 { max-width: 850px; margin-bottom: 6px; font-size: 18px; line-height: 1.45; }
 .paper p { margin: 0; color: var(--muted); font-size: 13px; }
+.paper h3 a { text-decoration: none; }
+.paper h3 a:hover { color: var(--accent); }
+.paper p a { text-underline-offset: 3px; }
+.section-copy { max-width: 900px; font-size: 18px; line-height: 1.8; }
+.talk { display: grid; grid-template-columns: 110px 1fr; gap: 24px; padding: 26px 0; border-top: 1px solid var(--line); }
+.talk:last-child { border-bottom: 1px solid var(--line); }
+.talk time, .talk-date { color: var(--accent); font-size: 13px; font-weight: 750; }
+.talk-date small { display: block; margin-top: 5px; color: var(--muted); font-size: 11px; font-weight: 400; }
+.talk h3 { margin-bottom: 9px; font-size: 18px; line-height: 1.45; }
+.talk h3 a { text-decoration: none; }
+.talk h3 a:hover { color: var(--accent); }
+.talk p { margin-bottom: 3px; color: var(--muted); font-size: 14px; }
+.subpage-intro { max-width: 950px; }
+.subpage-intro h1 { line-height: 1.2; }
+.topic-nav { display: grid; gap: 12px; margin-top: 36px; }
+.topic-nav a { text-decoration: none; color: var(--green); font-weight: 650; }
+.topic-nav a:hover { color: var(--accent); }
+.research-detail .section-heading { margin-bottom: 30px; }
+.research-detail .section-copy { margin-left: 110px; margin-bottom: 42px; }
 .link-row { margin-top: 38px; display: flex; flex-wrap: wrap; gap: 30px; }
 
 .teaching-grid,
@@ -407,8 +441,9 @@ footer a { font-weight: 700; text-decoration: none; }
   .current-role { grid-template-columns: 1fr; gap: 7px; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .section-heading { grid-template-columns: 42px 1fr; gap: 12px; margin-bottom: 45px; }
-  .timeline-item, .paper { grid-template-columns: 1fr; gap: 5px; }
+  .timeline-item, .paper, .talk { grid-template-columns: 1fr; gap: 5px; }
   .research-intro { margin-left: 0; }
+  .research-detail .section-copy { margin-left: 0; }
   .teaching-grid article, .misc-grid article, .contact-card > div { padding: 26px; }
 }
 
